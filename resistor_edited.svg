@@ -1,37 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" media="screen and (min-width: 601px)" href="stylesheet.css" />
-  <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/*">
-  <link rel="icon" href="/favicon.ico" type="image/*">
-
-  <title>quiz | resistor quiz</title>
-</head>
-<body>
-  <center>
-    <div class="header">
-      <div>
-        <p>time</p>
-        <p class = "counter"><span class="hour"></span>:<span class="minute"></span>:<span class="second"></span></p>
-      </div>
-      <div>
-        <p>score</p>
-        <p class ="score"></p>
-      </div>
-    </div>
-    <div class="container">
-      <p class = 'question-number'></p>
-      <h1 class = 'question'></h1>
-      <svg
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
    version="1.2"
    x="0"
    y="0"
-   width="1.5in"
+   width="0.39398in"
+   height="0.094490007in"
    viewBox="0 0 39.397998 9.4490009"
    id="svg1"
    xmlns="http://www.w3.org/2000/svg"
@@ -164,22 +137,4 @@
        opacity="0.3"
        d="m 32.932,5.68 v 0 c 0,0.527 -0.181,0.971 -0.41,0.971 h -2.67 c -0.528,0 -1.358,-0.078 -1.851,-0.17 L 27.9,6.459 C 27.421,6.369 26.582,6.289 26.048,6.289 H 16.4 c -0.53,0 -1.36,0.08 -1.85,0.17 L 14.45,6.48 C 13.97,6.571 13.14,6.65 12.6,6.65 H 12.16 10.77 10.34 C 9.81,6.65 9.37,7.058 9.37,7.546 V 7.889 8.11 8.35 c 0,0.5 0.44,0.896 0.97,0.896 h 2.25 c 0.53,0 1.36,-0.17 1.85,-0.371 l 0.1,-0.039 C 15.02,8.64 15.86,8.468 16.39,8.468 h 9.648 c 0.527,0 1.357,0.172 1.853,0.369 l 0.103,0.039 c 0.479,0.201 1.312,0.371 1.852,0.371 h 3.09 c 0.529,0 0.971,-0.41 0.971,-0.896 V 7.6 6.249 3.688 c -0.385,0.15 -0.975,0.57 -0.975,1.992 z" />
   </g>
-      </svg>
-      <br>
-      <br>
-      <input type="number" id="attempt" placeholder = 'Answer Here...'>
-      <p>press enter to submit</p>
-      <button class = "end-game">end game</button>
-    </div>
-    <div class="footer">
-      <!--- social link --->
-      <!-- <div class="social-links">
-        <a href="https://www.youtube.com/answerinprogress" class="fab fa-youtube" target="_blank" rel="noopener noreferrer"></a>
-        <a href="https://www.twitter.com/answerintweets" class="fab fa-twitter" target="_blank" rel="noopener noreferrer"></a>
-        <a href="https://www.instagram.com/answerinprogress" class="fab fa-instagram" target="_blank" rel="noopener noreferrer"></a>
-      </div>      -->
-    </div>
-  </center>
-  <script src="infinity game.js"></script>
-</body>
-</html>
+</svg>

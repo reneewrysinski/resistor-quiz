@@ -43,7 +43,7 @@ button:hover {
   position: fixed;
   height: 50px;
   bottom: 20px;
-  left: 0px;
+  left: 50px;
   right: 50px;
   margin-bottom: 0px;
 }
@@ -54,6 +54,16 @@ button:hover {
   font-weight: normal;
   font-size: 36px;
   line-height: 41px;
+  text-align: center;
+  color: #000000;
+}
+
+.credits {
+  font-family: Font Awesome 5 Brands;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
   text-align: center;
   color: #000000;
 }

@@ -7,31 +7,84 @@
   <link rel="stylesheet" media="screen and (min-width: 601px)" href="stylesheet.css" />
   <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-  <link rel="shortcut icon" href="/quickmaff-favicon.ico" type="image/*">
-  <link rel="icon" href="/quickmaff-favicon.ico" type="image/*">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/*">
+  <link rel="icon" href="/favicon.ico" type="image/*">
 
-  <title>home | quick maths</title>
+  <title>home | resistor quiz</title>
 </head>
 <body>
   <div class="container">
     <!--- title page -->
     <div class="center">
-    <h1>quick maths</h1> 
-    <p>how quickly can you answer 20 basic math questions <em>correctly</em>?</p>
+    <h1>resistors quiz</h1> 
+    <p>how quickly can you identify 10 resistors correctly?</p>
     <br>
-    <a href="quiz.html" class="btn">try now</a>
+    <label for="series">select a series:</label>
+    <select id="series" name="series">
+      <option value="e3">E3</option>
+      <option value="e6">E6</option>
+      <option value="e12">E12</option>
+      <option value="e24">E24</option>
+      <option value="e48">E48</option>
+    </select>
+    <br>
+    <br>
+    <a id="quizBtn" href="quiz.html" class="btn">try now</a>
     <br>
     <br>  
-    <a href="quiz infinity ver.html" class="btn">practice mode</a>
+    <a id="infQuizBtn" href="quiz infinity ver.html" class="btn">practice mode</a>
     </div>
   </div>
   <div class="footer">
-    <!--- social link --->
-    <div class="social-links">
-      <a href="https://www.youtube.com/answerinprogress" class="fab fa-youtube" target="_blank" rel="noopener noreferrer"></a>
-      <a href="https://www.twitter.com/answerintweets" class="fab fa-twitter" target="_blank" rel="noopener noreferrer"></a>
-      <a href="https://www.instagram.com/answerinprogress" class="fab fa-instagram" target="_blank" rel="noopener noreferrer"></a>
-    </div>     
+    <div class="credits">
+      <p>created by renee wrysinski.
+      <br>based on <a href="https://github.com/sabrina-aip/quick-maffs">quick-maffs</a> by <a href="https://www.youtube.com/answerinprogress">sabrina cruz</a>.
+      <br>resistor icons created using <a href="https://fritzing.org">fritzing</a> assets.
+      </p>
+    </div>
   </div>
+
+  <script>
+    // Function to set series parameter in URL and redirect
+    function redirectToQuiz(series) {
+      window.location.href = `quiz.html?series=${series}`;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get the series selector dropdown
+      const seriesSelector = document.getElementById('series');
+
+      // Get the "try now" button
+      const quizBtn = document.getElementById('quizBtn');
+
+      // Add click event listener to the "try now" button
+      quizBtn.addEventListener('click', function(event) {
+        // Prevent default button behavior
+        event.preventDefault();
+
+        // Get the selected series value
+        const selectedSeries = seriesSelector.value;
+
+        // Redirect to quiz.html with the selected series
+        redirectToQuiz(selectedSeries);
+      });
+
+      // Get the "practice mode" button
+      const infQuizBtn = document.getElementById('infQuizBtn');
+
+      // Add click event listener to the "practice mode" button
+      infQuizBtn.addEventListener('click', function(event) {
+        // Prevent default link behavior
+        event.preventDefault();
+
+        // Get the selected series value
+        const selectedSeries = seriesSelector.value;
+
+        // Redirect to quiz infinity ver.html with the selected series
+        window.location.href = `quiz infinity ver.html?series=${selectedSeries}`;
+      });
+    });
+  </script>
+
 </body>
 </html>
